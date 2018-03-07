@@ -1,0 +1,36 @@
+@import 'mixins.scss';
+html{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size-adjust: 30px;
+}
+body{
+    margin: 0px;
+    background-color: white;
+}
+.contenedorPrincipal{
+    position: relative;
+    transition-timing-function: 2s;
+    .spaceFix{
+        @include divMixin(100%, 5rem, null, inline-block );
+        position: relative;
+    }
+}
+
+section{
+    position: relative;
+    @include divMixin(100vw, auto, white, inline-block);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+header{
+    position: relative;
+    margin: auto;
+}
+
+.oculto{
+    display: none;
+}
+@import "nav.scss";
+@import "productos.scss";
+@import "alertas.scss";

@@ -1,0 +1,175 @@
+.container-flex{
+    @include divMixin(95%,auto, white, table);
+    margin-left: 2.5%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    position: relative;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    header{
+        @include divMixin(95%, auto, null, inline-block);
+        h2{
+            text-align: left;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.container{
+    @include divMixin(100%,auto, null, inline-block);
+    margin-left: 2.5%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    position: relative;  
+}
+
+.label-input{
+    @include divMixin(auto,auto, null, inline-block);
+    position: relative;
+    font-size: 1.2rem;
+    @include noSelec;
+}
+
+
+.izquierda{
+    float: left;
+    left: 0px;
+}
+
+#buscador{
+    @include divMixin(100%, 2rem, rgba(1,1,1,0), inline-block);
+    position: relative;
+    letter-spacing: .03rem;
+    font-size: 1.35rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    border-bottom: none;
+    &:focus{
+        outline: none;
+        color: white;
+        border-bottom: none;
+    }
+    &:disabled{
+        color: white;
+    }
+    &:valid{
+        color: white;
+    }
+    &:after{
+        content: " >>>";
+    }
+}
+
+
+input[type='text'], input[type=password]{
+    font-weight: 300;
+    font-size: 1.2rem;
+    position: relative;
+    border: none;
+    color: rgba(0,0,0,.6);
+    &:focus{
+        outline: none;
+        color: rgba(0,0,0,1);
+    }
+    &:disabled{
+        color: rgba(0,0,0,.6);
+        @include noSelec;
+    }
+}
+
+.derecha{
+    float: right;
+    right: 0px;
+}
+
+
+.divAbsoluto{
+    @include divMixin(80%, auto, null ,inline-block);
+    margin-right: 0%;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    label{
+        @include divMixin(27%, auto, null, inline-block);
+    }
+}
+
+.producto{
+    @include divMixin(20rem, 26rem, null, inline-block);
+    margin: .25rem auto;
+    @include noSelec;
+    .containerProducto{
+        margin: 0px;
+        @include card(1);
+        @include divMixin(18rem, 24rem, null, inline-block);
+        &:hover{
+            @include card(2); 
+        }
+        div{
+            @include divMixin(90%, 15rem, null, inline-block);
+            position: relative; 
+            margin: 0px;
+            margin-left: 0%; 
+            text-align: center;
+        }
+        .imagen{
+            @include divMixin(100%, 90%, white, table);
+            margin-top: auto;
+            position: relative;
+            @include background;
+            background-image: url(../imagenes/ejemplo.jpg);
+        }
+        .abajo{
+            height: 7rem;
+            border-top: .5px solid gray;
+            text-align: left;
+            span{
+                @include divMixin(100%, auto, null, table);
+                position: relative;
+            }
+            .titulo{
+                margin-top: .25rem;
+                margin-bottom: .15rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                letter-spacing: .1rem;
+                line-height: 1.7rem;
+            } 
+            .info{
+                font-size: .85rem;
+                font-weight: 400;
+            }
+            .real{
+                position: absolute;
+                float: bottom;
+                bottom: 0px;
+            }
+        }
+        .opciones{
+            @include divMixin(90%, 2rem, null, inline-block);
+            text-transform: uppercase;
+            font-size: .8rem;
+            font-weight: 800;
+            color: rgba(1,1,1,.6);
+            span{
+                @include divMixin(auto, auto, white, table);
+                vertical-align: middle;
+                position: relative;
+            }
+            .izquierda{
+                &:hover{
+                    color: rgba(1,1,1,1);
+                }
+                cursor: pointer;
+            }
+            .derecha{
+                font-size: 1.1rem;
+                line-height: .85rem;
+                &:hover{
+                    color: rgba(1,1,1,1);
+                }
+                cursor: pointer;
+            }
+        }
+    }
+}

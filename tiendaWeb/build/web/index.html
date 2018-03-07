@@ -1,0 +1,225 @@
+
+<html>
+    <head>
+        <title>Tienda Vergas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type='text/css' href='css/estilo.css'>
+    </head>
+    <body>
+        <!-- nav :0 -->
+        
+        <nav id="navPrincipal">
+            <div class="izquierda">
+                <span><a href="#sideBar" data-target="#sideBar">menu</a></span>
+            </div>
+            <div>
+            </div>
+            <div class="derecha">
+                <span>buscar</span>
+                <span id="navBtn">logo</span>
+            </div>
+            <!-- busqueda -->
+            <div class="container ">
+                <div class="divAbsoluto izquierda">
+                    <input type="text" id="buscador" placeholder="Buscar"/>
+                </div>
+                <div class="divAbsoluto" style="display:none">
+
+                </div>
+            </div>
+        </nav>
+        <!-- menu  -->
+        <div id="sideBar" class="sideBar">
+            
+            <div>
+                
+                <span>&nbsp;</span>
+                <span class="titulo">
+                    título
+                </span>
+                <span>
+                    <a href="#" class="">Link 1</a>
+                </span>
+                <span class="titulo">
+                    título
+                </span>
+                <label for="idcheck">Esconder</label>
+                <input type="checkbox" id="idcheck" class="pruebitaaa">
+                <span>
+                    <a href="#" class="">Link 1</a>
+                </span>
+                
+            </div>
+        </div>
+        <div id="contenedorAlertas" class="alertas oculto" style="display: block">
+            <div class="blur"></div>
+            <div id="contenedorAlertasPequeño">
+                <div class="izquierda">
+                    <div class="imagen" style="background-image: url(imagenes/ejemplo.jpg)" >&nbsp;</div>
+                </div>
+                <div class="derecha">
+                    <div class="opciones">
+                        <span class="" id="cerrarAlerta"> &times;</span>
+                    </div>
+                    <div id="formulario">
+                        <div class="">
+                            <input type="text" class="titulo" id="hloa" placeholder="Nombre del Producto" pattern="">
+                        </div>
+                        <div class="divAbsoluto"> 
+                            <input type="text" id="hloaa" class="grande" placeholder="Descripción del producto"  required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Inserte un correo apropiado">
+                            <input type="text" id="aaaaa" class="pequeño" placeholder="Clave" required  pattern="\d*" title="Inserta solamente números(3)">
+                            <input type="text" id="aaaaa" class="pequeño" placeholder="Código de barras" required maxlength="3" pattern="\d*" title="Inserta solamente números(3)">
+                            <input type="text" id="aaaaa" class="pequeño" placeholder="Existencia" required maxlength="1" pattern="\d*" title="Inserta solamente números(3)">
+                            <input type="text" id="hloaa" class="pequeño" placeholder="Tamaño" required maxlength="5" pattern="\d*" title="Inserta solamente números(3)">
+                            <input type="text" id="hloaa" class="pequeño" placeholder="Unidad de medición" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Inserte un correo apropiado">
+                            <input type="text" id="aaa" class="pequeño" placeholder="Peso" required maxlength="5" pattern="\d*" title="Inserta solamente números(3)">
+                            <input type="text" id="aaa" class="pequeño" placeholder="Familia" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Inserte un correo apropiado">
+                            <input type="text" id="aaaaa" class="pequeño" placeholder="Precio de compra" required maxlength="5" pattern="\d*" title="Inserta solamente números(3)">
+                            <input type="text" id="aaaaa" class="pequeño" placeholder="Precio de Venta" required maxlength="5" pattern="\d*" title="Inserta solamente números(3)">
+                        </div>
+                        <div class="">
+                            <label> Aceptar</label>
+                            <label> Cancelar</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contenedorPrincipal" class="contenido">
+            <section>
+                <header>
+                    <h2>
+                        hola
+                    </h2>
+                </header>
+
+                <div id= "contenedorProductos" class="container-flex">
+                    <div class="producto">
+                        <div class="containerProducto">
+                            <div class="">
+                                <span class="imagen" style="">&nbsp;</span>
+                            </div>
+                            <div class="abajo">
+                                <span class="titulo">Titulo obj</span>
+                                <span class="info"> info del producto</span>
+                            </div>
+                            <div class="opciones">
+                                <span class="izquierda">comprar</span>
+                                <label class="derecha">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="containerProducto">
+                            <div class="">
+                                <span class="imagen" style="">&nbsp;</span>
+                            </div>
+                            <div class="abajo">
+                                <span class="titulo">Titulo obj</span>
+                                <span class="info"> info del producto</span>
+                            </div>
+                            <div class="opciones">
+                                <span class="izquierda">comprar</span>
+                                <label class="derecha">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="containerProducto">
+                            <div class="">
+                                <span class="imagen" style="">&nbsp;</span>
+                            </div>
+                            <div class="abajo">
+                                <span class="titulo">Titulo obj</span>
+                                <span class="info"> info del producto</span>
+                            </div>
+                            <div class="opciones">
+                                <span class="izquierda">comprar</span>
+                                <label class="derecha">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="containerProducto">
+                            <div class="">
+                                <span class="imagen" style="">&nbsp;</span>
+                            </div>
+                            <div class="abajo">
+                                <span class="titulo">Titulo obj</span>
+                                <span class="info"> info del producto</span>
+                            </div>
+                            <div class="opciones">
+                                <span class="izquierda">comprar</span>
+                                <label class="derecha">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="containerProducto">
+                            <div class="">
+                                <span class="imagen" style="">&nbsp;</span>
+                            </div>
+                            <div class="abajo">
+                                <span class="titulo">Titulo obj</span>
+                                <span class="info"> info del producto</span>
+                            </div>
+                            <div class="opciones">
+                                <span class="izquierda">comprar</span>
+                                <label class="derecha">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="containerProducto">
+                            <div class="">
+                                <span class="imagen" style="">&nbsp;</span>
+                            </div>
+                            <div class="abajo">
+                                <span class="titulo">Titulo obj</span>
+                                <span class="info"> info del producto</span>
+                            </div>
+                            <div class="opciones">
+                                <span class="izquierda">comprar</span>
+                                <label class="derecha">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="containerProducto">
+                            <div class="">
+                                <span class="imagen" style="">&nbsp;</span>
+                            </div>
+                            <div class="abajo">
+                                <span class="titulo">Titulo obj</span>
+                                <span class="info"> info del producto</span>
+                            </div>
+                            <div class="opciones">
+                                <span class="izquierda">comprar</span>
+                                <label class="derecha">+</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="producto">
+                        <div class="containerProducto">
+                            <div class="">
+                                <span class="imagen" style="">&nbsp;</span>
+                            </div>
+                            <div class="abajo">
+                                <span class="titulo">Titulo obj</span>
+                                <span class="info"> info del producto</span>
+                            </div>
+                            <div class="opciones">
+                                <span class="izquierda">comprar</span>
+                                <label class="derecha">+</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="jsOculto" class="oculto">
+
+        </div>
+    </body>
+</html>

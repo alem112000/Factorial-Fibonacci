@@ -1,0 +1,113 @@
+.blur{
+    @include divMixin(100%,100%,rgba(30,30,30,.7), flex);
+    z-index: 1100;
+    position: absolute;
+}
+
+.alertas{
+    @include divMixin(100vw, 100vh, null, flex);
+    position:  fixed;
+    z-index: 1200;
+    vertical-align: middle;
+    align-content: center;
+    justify-content: center;
+    @include noSelec;
+    align-items: center;
+    #contenedorAlertasPequeño{
+        @include divMixin(70vw, 70vh, white, inline-block);
+        position: relative;
+        overflow: hidden;
+        z-index: 12001;
+        @include card(2);
+    }
+    .izquierda{
+        @include divMixin(40%, 100%, null, inline-block);
+        position: relative;
+        .imagen{
+            @include divMixin(90%, 95%, red, table);
+            position: relative;
+            margin-top: 2.5%;
+            @include background;
+        }
+    }
+    .derecha{
+        @include card(2);
+        @include divMixin(60%, 100%, null, inline-block);
+        position: relative;
+    }
+    .opciones{
+        @include divMixin(100%, 1.5rem, null, inline-block);
+        position: relative;
+        #cerrarAlerta{
+            color: rgba(1,1,1,.6);
+            float: right;
+            right: 0px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 1.5rem;
+            text-transform: uppercase;
+            margin-right: .45rem;
+            &:hover{
+                color: rgba(1,1,1,1);
+            }
+            cursor: pointer;
+        }
+    }
+    #formulario{
+        @include divMixin(95%, 1.5rem, null, inline-block);
+        margin-left: 2.5%;
+        position: relative;
+        div{
+            @include divMixin(95%, auto, null, inline-block);
+            margin-left: 2.5%;
+            label{
+                @include divMixin(42.5%, auto, null, inline-block);
+                margin-right: 5%;
+                height: 2rem;
+                margin-top: .5rem;
+                margin-bottom: 1px;
+            }
+        }
+        .titulo{
+            font-size: 1.5rem;
+            font-weight: 500;
+            height:3.5rem;
+            margin-bottom: 1rem;
+            @include divMixin(100%, auto, null, inline-block);
+        }
+        .pequeño{
+            @include divMixin(42.5%, auto, null, inline-block);
+            margin-right: 5%;
+            height: 2rem;
+            margin-top: .5rem;
+            margin-bottom: 1px;
+            &:focus{
+                border-bottom: 2px solid rgba(0,0,0,.6);
+                margin-bottom: 0px;
+            }
+            &:active{
+                border-bottom: 2px solid rgba(0,0,0,.6);
+                margin-bottom: 0px;
+            }
+        }
+        .grande{
+            @include divMixin(90%, auto, null, inline-block);
+            height: 2rem;
+            margin-top: .5rem;
+            margin-bottom: 1px;
+            &:focus{
+                border-bottom: 2px solid rgba(0,0,0,.6);
+                margin-bottom: 0px;
+            }
+            &:active{
+                border-bottom: 2px solid rgba(0,0,0,.6);
+                margin-bottom: 0px;
+            }
+        }
+        .divAbsoluto{
+            label{
+                position: relative;
+            }
+        }
+    }
+}

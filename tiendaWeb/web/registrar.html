@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link rel='stylesheet' type='text/css' href='css/estilo.css'>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    </head>
+    <body>
+         <div id="contenedorAlertas" class="alertas oculto" style="display: block">
+            <div class="blur"></div>
+            <div id="contenedorAlertasPequeño">
+                <div class="izquierda">
+                    <div class="imagen" style="background-image: url(imagenes/ejemplo2.jpg)" >&nbsp;</div>
+                </div>
+                <div class="derecha">
+                    <div class="opciones">
+                        <span class="" id="cerrarAlerta"> </span>
+                    </div>
+                    <div id="formulario">
+                        <div class="">
+                            <input type="text" class="titulo" id="hloa" placeholder="Ingrese los datos requeridos" pattern="" disabled>
+                        </div>
+                        <div class="divAbsoluto">
+                            <form action="imagen.html">
+                             <input type="text" class="titulo"  id="hloa" placeholder="Correo" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Inserte un correo apropiado"/>                      
+                             <input type="password" class="titulo" id="hloa" placeholder="Contraseña" required pattern="{8-30}" title="Inserta una contraseña de al menos 8 caracteres">
+                             <input type="text" class="titulo"  id="hloa" placeholder="Tarjeta" required pattern="[0-9]{16}" title="Inserta solamente números (16)"/>
+                             <input type="text" class="titulo"  id="hloa" placeholder="CCV" required maxlength="3" pattern="\d*" title="Inserta solamente números(3)"/>
+                             <div class="espacio2">
+                                 
+                             </div>
+                             <div class="acomodarboton"><input type="submit" value="Registrar"  ></div>
+                             <div class="espacioLateral"><i class="material-icons">compare arrows</i></div>
+                            </form>
+                        </div>
+                        <div class="">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

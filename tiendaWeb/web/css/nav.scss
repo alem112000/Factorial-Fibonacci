@@ -1,0 +1,103 @@
+nav{
+    @include divMixin(100vw,auto,rgb(51,51,51), table);
+    position: fixed;
+    top: 0px;
+    min-height: 2rem;
+    padding-bottom: .5rem;
+    margin: 0px;
+    z-index: 1000;
+    div{
+        @include divMixin(auto,100%,null, inline-table);
+        position: relative;
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        vertical-align: middle;
+        margin-top: .5rem;
+        text-align: center;
+        span{
+            @include divMixin(auto,100%,null, inline-block);
+            margin: auto;
+            vertical-align: middle;
+            align-content: center;
+            text-align: center;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            color:white;
+            border-bottom: 2px solid rgba(0,0,0,0);
+            font-weight: 500;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            text-transform: capitalize;
+            &:hover{
+                border-bottom: 2px solid white;
+                opacity: .6;
+            }
+        }
+        .activo{
+            border-bottom: 2px solid white;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.navBtn ~ #sideBar{
+    &:target{
+        background-color: red;
+    }
+     
+}
+
+
+.sideBar{
+    @include divMixin(25vw, 100vh, rgb(51,51,51), table);
+    z-index: 100;
+    //transform: translateX(-100%) scale(1, 0.1);
+    //transform-origin: top left;
+    //transition: all 0.3s ease-out;
+    position: fixed;
+    div{
+        @include divMixin(100%, auto, null, table);
+        position: relative;
+        margin-top:1rem;
+        color: white;
+        span{
+            @include divMixin(80%, auto, null, table);
+            position: relative;
+            margin-left: 3rem;
+            margin-bottom: .2rem;
+            margin-top: .2rem;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+        }
+        .titulo{
+            @include divMixin(90%, auto, null, table);
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-top: 1.5rem;
+            margin-left: 1.5rem;
+            letter-spacing: .1rem;
+        }
+    }
+}
+
+a{
+    opacity:.7;
+    text-decoration: none;
+    &:hover{
+        color:white;
+        opacity: 1;
+    }
+    &:active{
+        opacity: 1;
+        color:white;
+    }
+    &:visited{
+        color:white;
+    }
+    &:link{
+        color:white;
+    }
+}
